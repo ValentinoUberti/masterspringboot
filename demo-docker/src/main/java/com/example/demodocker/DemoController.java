@@ -20,12 +20,16 @@ public class DemoController
         // Simulating a 1Mib memory consumption and a cpu workload
         Vector v = new Vector();
         
-        for (int i=0; i <= 1024; i++ )
+        for (int i=0; i <= 512; i++ )
           {
               byte b[]= new byte[1];
               v.add(b);
           }
 
+          for (int i=0; i <= 1021512; i++ )
+          {
+              
+          }
 
         return customerList;
     }
