@@ -17,10 +17,10 @@ public class DemoController
         customerList.add(new Customer(2, "Test"));
 
 
-        // Simulating a 10Mib memory consumption and a cpu workload
+        // Simulating a 1Mib memory consumption and a cpu workload
         Vector v = new Vector();
         
-        for (int i=0; i <= 1024*1024; i++ )
+        for (int i=0; i <= 1024; i++ )
           {
               byte b[]= new byte[1];
               v.add(b);
