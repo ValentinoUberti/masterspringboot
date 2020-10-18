@@ -2,18 +2,20 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: jvm-vs     
+  name: demo-quarkus-jvm    
 spec:
   hosts:
   - "*"
   gateways:
-  - jvm-gateway
+  - monitoring/monitoring-gateway
   http:
   - match:
     - uri:
-        exact: /jvm
+        exact: /quarkus-jvm
+    rewrite:
+        uri: /demo
     route:
     - destination:
-        host: masterspringboot-git
+        host: quarkus-jvm
         port:
           number: 8080

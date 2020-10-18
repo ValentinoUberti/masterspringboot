@@ -11,9 +11,7 @@ spec:
   http:
   - match:
     - uri:
-        exact: /monitoring
-    rewrite:
-        uri: /
+        prefix: "/monitoring/"
     route:
     - destination:
         host: sia-monitoring

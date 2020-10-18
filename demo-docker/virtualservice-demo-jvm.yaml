@@ -2,20 +2,20 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: monitoring-vs     
+  name: demo-jvm    
 spec:
   hosts:
   - "*"
   gateways:
-  - monitoring-gateway
+  - monitoring/monitoring-gateway
   http:
   - match:
     - uri:
-        exact: /monitoring
+        exact: /jvm
     rewrite:
         uri: /
     route:
     - destination:
-        host: sia-monitoring
+        host: masterspringboot-git
         port:
           number: 8080
