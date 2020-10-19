@@ -16,8 +16,7 @@ public class DemoController
         customerList.add(new Customer(1, "Demo"));
         customerList.add(new Customer(2, "Test"));
 
-
-        // Simulating a 1Mib memory consumption and a cpu workload
+        // Simulate a Cpu workload and 5Mib memory consumption per HTTP request 
         Vector v = new Vector();
         
         for (int i=0; i <= 1024*1024*5; i++ )
@@ -26,7 +25,7 @@ public class DemoController
               v.add(b);
           }
 
-          for (int i=0; i <= 1000000; i++ )
+        for (int i=0; i <= 1000000; i++ )
           {
               
           }
