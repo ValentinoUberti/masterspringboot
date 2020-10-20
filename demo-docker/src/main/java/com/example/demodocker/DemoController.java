@@ -18,13 +18,13 @@ public class DemoController
 
         // Simulate a Cpu workload and 5Mib memory consumption per HTTP request 
         Vector v = new Vector();
-        
+       /* 
         for (int i=0; i <= 1024*1024*5; i++ )
           {
               byte b[]= new byte[1];
               v.add(b);
           }
-
+        */
         for (int i=0; i <= 10000; i++ )
           {
               
