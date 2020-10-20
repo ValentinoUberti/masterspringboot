@@ -21,7 +21,7 @@ public class DemoController
         
         for (int i=0; i <= 1024; i++ )
           {
-              byte b[]= new byte[1];
+              byte b[]= new byte[1024];
               v.add(b);
           }
         
