@@ -24,17 +24,17 @@ public class GreetingResource {
         // Simulating a 1Mib memory consumption and a cpu workload
         Vector v = new Vector();
         
-        for (int i=0; i <= 1024*1024*5; i++ )
-          {
-              byte b[]= new byte[1];
-              v.add(b);
-          }
-
-          for (int i=0; i <= 1000000; i++ )
-          {
-              
-          }
-
+        for (int i=0; i <= 1024*5; i++ )
+        {
+            byte b[]= new byte[1024];
+            v.add(b);
+        }
+    
+      for (int i=0; i <= 10000; i++ )
+        {
+                  Math.sqrt(Math.pow(i,2));
+        }
+      
         return customerList;
     }
 }

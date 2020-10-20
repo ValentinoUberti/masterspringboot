@@ -1,1 +1,4 @@
-./mvnw package -Pnative -Dquarkus.native.container-runtime=podman
+mvn package -Pnative -Dquarkus.native.container-runtime=podman
+podman build -f src/main/docker/Dockerfile.native -t quay.io/valeube/quarkus-native 
+podman run -i --rm -p 8080:8080 quay.io/valeube/quarkus-native
+
